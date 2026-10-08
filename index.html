@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3d Teste</title>
+    <link rel="stylesheet" href="/style/styles.css" />
+  </head>
+  <body>
+
+    <div class="card">
+      <img src="/images/carro.png" alt="image of a car in 3D card" />
+      <button>Comprar</button>
+    </div>
+
+    <script type="text/javascript" src="/js/tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelector(".card"), {
+        max: 25,
+        speed: 1000,
+      });
+
+      VanillaTilt.init(document.querySelectorAll(".card"));
+    </script>
+
+  </body>
+</html>
