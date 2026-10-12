@@ -4,13 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3d Teste</title>
-    <link rel="stylesheet" href="/style/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
 
-    <div class="card">
+    <div class="container">
+
+    <div class="card" data-tilt data-tilt-full-page-listening data-tilt-speed="3000" data-tilt-reverse="true">
       <img src="/images/carro.png" alt="image of a car in 3D card" />
       <button>Comprar</button>
+    </div>
+    <div class="card" data-tilt data-tilt-scale="1.1" data-tilt-speed="2000">
+      <img src="/images/oculos.webp" alt="image of glasses in 3D card" />
+      <button>Comprar</button>
+    </div>
+    <div class="card" data-tilt data-tilt-axis="x" data-tilt-speed="1500" data-tilt-reverse="false">
+      <img src="/images/pica.jpg" alt="image of a watch in 3D card" />
+      <button>Comprar</button>
+    </div>
+
     </div>
 
     <script type="text/javascript" src="/js/tilt.js"></script>
@@ -20,8 +32,7 @@
         speed: 1000,
       });
 
-      VanillaTilt.init(document.querySelectorAll(".card"));
+      VanillaTilt.init(document.querySelectorAll(".card, .card2"));
     </script>
-
   </body>
 </html>

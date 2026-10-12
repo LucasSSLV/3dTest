@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "vanilla-tilt": "^1.8.1"
+  },
+  "name": "3dtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^8.3.4"
+  }
+}
